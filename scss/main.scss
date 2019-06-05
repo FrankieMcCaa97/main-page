@@ -1,0 +1,111 @@
+body{
+  font-family: sans-serif;
+}
+h1{
+  font-size: 75px;
+  position: absolute;
+  top: 250px;
+  left: 629px;
+}
+h2{
+  font-size: 20px;
+  position: relative;
+  left: 14px;
+}
+p{
+  position: absolute;
+  top: 400px;
+  left: 460px;
+}
+header{
+  padding: 14px;
+  background: #f2f2f2;
+}
+header nav{
+  position: absolute;
+  left: 1200px;
+  top: 12px;
+}
+header button{
+  background: none;
+  border: none;
+  position: absolute;
+  left: 0px;
+  font-size: 20px;
+}
+header nav a{
+  color: black;
+}
+header nav a:hover{
+  text-decoration: none;
+  background: darkgrey;
+  padding: 15px;
+}
+footer{
+  text-align: right;
+  position: relative;
+  top: 630px;
+  background: #f2f2f2;
+  padding: 20px;
+}
+#side-bar{
+  height: 100%;
+ width: 20%;
+ position: fixed;
+ z-index: 1;
+ top: 0;
+ left: 0;
+ background-color: grey;
+ // overflow-x: hidden;
+ transition: 0.5s;
+ padding-top: 60px;
+ display: none;
+}
+#side-bar .id-card .text a{
+  font-size: 20px;
+  width: 100px;
+  position: relative;
+  left: 36px;
+  color: white;
+}
+#side-bar span{
+  font-size: 150px;
+}
+#side-bar .id-card{
+  position: absolute;
+  left: 50px;
+  bottom: 328px;
+  background: black;
+  width: 190px;
+  padding: 20px;
+  border-radius: 10%;
+}
+.buttons{
+  position: absolute;
+  left: 670px;
+  bottom: 220px;
+}
+.buttons .button-1{
+  border: none;
+  background: black;
+  color: white;
+  padding: 15px;
+  font-size: 22px;
+}
+.buttons .button-1:hover{
+  background: lightgrey;
+  color: black;
+  transition: 0.5s;
+}
+.buttons .button-2{
+  border: none;
+  background: lightgrey;
+  color: black;
+  padding: 15px;
+  font-size: 22px;
+}
+.buttons .button-2:hover{
+  background: black;
+  color: white;
+  transition: 0.5s;
+}
