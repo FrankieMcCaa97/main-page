@@ -3,41 +3,65 @@
   <head>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <meta charset="utf-8">
-    <title>Black Talk</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WokeNation</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <script type="text/javascript" src="./js/index.js">
+
+    <div id="main">
+    <div class="navbar">
+    <button class="openbtn" onclick="openNav()">☰</button>
+      <h2><a href="index.html">WokeNation</a></h2>
+      <a href="#">News</a>
+      <a href="#">Followers</a>
+      <a href="#">Following</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <span><i class="fa fa-caret-down
+"></i></span>
+    <div class="dropdown-content">
+      <a href="#">News</a>
+      <a href="#">Followers</a>
+      <a href="#">Following</a>
+    </div>
+  </div>
+
+    <h1>WokeNation</h1>
+    <img src="img/black-fist.png" class="black-fist" alt="black fist logo">
+    <div class="buttons">
+      <button type="button" name="button"><a href="sign-up/sign-up.html">Sign Up</a></button>
+      <button href="login/login.html" type="button" name="button"><a href="login/login.html">Login</a></button>
+    </div>
+
+    <div class="side-bar" id="mySidebar">
+      <a href="javascript:void(0)" onclick="closeNav()">Close X</a>
+      <div class="sign-in-btn">
+      <i class="fa fa-user-circle"></i>
+      <a href="#">Sign In!</a>
+    </div>
+    </div>
+
+    <script>
+      function openNav(){
+        document.getElementById("mySidebar").style.width = "300px"
+        document.getElementById("main").style.marginLeft = "300px"
+      }
+      function closeNav(){
+        document.getElementById("mySidebar").style.width = "0"
+        document.getElementById("main").style.marginLeft = "0"
+      }
     </script>
-   <h1>Let's Talk</h1>
-   <p>Welcome to Let's Talk where you can communicate and meet different people around the world.<br> You can have a conversation about business, economics, geeky things and etc.</p>
-   <div class="buttons">
-   <button type="button" name="button" class="button-1">Sign Up</button>
-   <button type="button" name="button" class="button-2">Login</button>
- </div>
 
-   <header>
-    <button type="button" name="button">☰</button>
-
-    <div id="side-bar">
-      <button type="button" name="button">Close x</button>
-      <div class="id-card">
-      <span class="glyphicon glyphicon-user"></span>
-      <div class="text"><a href="#">Sign Up</a></div>
-    </div>
-    </div>
-   <h2>Let's Talk</h2>
-   <nav>
-     <a href="#">News</a>
-     <a href="#">Business</a>
-     <a href="#">Channels</a>
-     <a href="#">Trending</a>
-   </nav>
- </header>
- <footer>
-   &copy;Let's Talk 2019
- </footer>
+    <footer>
+      &copy;WokeNation 2019
+    </footer>
   </body>
 </html>
